@@ -177,6 +177,7 @@ dtb-$(CONFIG_TEGRA) += tegra20-harmony.dtb \
 	tegra124-venice2.dtb \
 	tegra186-p2771-0000-000.dtb \
 	tegra186-p2771-0000-500.dtb \
+	tegra186-royaloak-smartsense.dtb \
 	tegra210-e2220-1170.dtb \
 	tegra210-p2371-0000.dtb \
 	tegra210-p2371-2180.dtb \

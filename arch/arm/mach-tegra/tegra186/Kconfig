@@ -16,11 +16,17 @@ config TARGET_P2771_0000
 	  micro-B port, Ethernet, USB3 host port, SATA, PCIe, and two GPIO
 	  expansion headers.
 
+config TARGET_ROYALOAK_SMARTSENSE
+	bool "Miovision Tegra186 Royal Oak Smart Sense board"
+	help
+	  Miovision Royal Oak Smart Sense Board
+
 endchoice
 
 config SYS_SOC
 	default "tegra186"
 
 source "board/nvidia/p2771-0000/Kconfig"
+source "board/miovision/royaloak-smartsense/Kconfig"
 
 endif

@@ -1,0 +1,7 @@
+/dts-v1/;
+
+#include "tegra186-p2771-0000.dtsi"
+
+/ {
+	model = "MIOVISION SMARTSENSE";
+};

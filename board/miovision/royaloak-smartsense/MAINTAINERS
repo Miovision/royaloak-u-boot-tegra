@@ -1,0 +1,6 @@
+SMARTSENSE BOARD
+M:	Miovision Firmware Team <its_firmware@miovision.com>
+S:	Maintained
+F:	board/miovision/royaloak-smartsense/
+F:	include/configs/royaloak-smartsense.h
+F:	configs/royaloak-smartsense_defconfig
