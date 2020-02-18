@@ -1,0 +1,6 @@
+SMARTSENSE BOARD
+M:	Mike Loder <mloder@miovision.com>
+S:	Maintained
+F:	board/miovision/smartsense/
+F:	include/configs/smartsense.h
+F:	configs/smartsense_defconfig
