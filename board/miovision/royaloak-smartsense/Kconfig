@@ -1,17 +1,17 @@
 # Copyright (c) 2020, Miovision.
-# Copyright (c) 2020, Miovision
+# Miovision Technologies Inc.
 #
 # SPDX-License-Identifier: GPL-2.0
 
-if TARGET_SMARTSENSE
+if TARGET_ROYALOAK_SMARTSENSE
 
 config SYS_BOARD
-	default "smartsense"
+	default "royaloak-smartsense"
 
 config SYS_VENDOR
 	default "miovision"
 
 config SYS_CONFIG_NAME
-	default "smartsense"
+	default "royaloak-smartsense"
 
 endif
