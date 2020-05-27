@@ -1,0 +1,6 @@
+SMARTSENSE BOARD
+M:	Miovision Firmware Team <its_firmware@miovision.com>
+S:	Maintained
+F:	board/miovision/royaloak-ctm/
+F:	include/configs/royaloak-ctm.h
+F:	configs/royaloak-ctm_defconfig

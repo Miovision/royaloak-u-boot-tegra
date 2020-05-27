@@ -1,0 +1,20 @@
+# Copyright (c) 2020, Miovision.
+# Miovision Technologies Inc.
+#
+# SPDX-License-Identifier: GPL-2.0
+
+if TARGET_ROYALOAK_CTM
+
+config SYS_BOARD
+	default "royaloak-ctm"
+
+config SYS_VENDOR
+	default "miovision"
+
+config SYS_CONFIG_NAME
+	default "royaloak-ctm"
+
+config NANO_EMMC
+	bool "Module has eMMC"
+
+endif

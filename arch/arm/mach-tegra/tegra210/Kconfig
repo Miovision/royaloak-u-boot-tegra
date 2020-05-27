@@ -41,6 +41,11 @@ config TARGET_P3450_0000
 	help
 	  P3450-0000 is a P3448 CPU board married to a P3449 I/O board.
 
+config TARGET_ROYALOAK_CTM
+	bool "Miovision Tegra210 RoyalOak-CTM (Jetson Nano)"
+	help
+	  Miovision RoyalOak-CTM carrier board.
+
 endchoice
 
 config SYS_SOC
@@ -50,6 +55,7 @@ source "board/nvidia/e2220-1170/Kconfig"
 source "board/nvidia/p2371-0000/Kconfig"
 source "board/nvidia/p2371-2180/Kconfig"
 source "board/nvidia/p2571/Kconfig"
-source "board/nvidia/p3450-0000/Kconfig"
+source "board/nvidia/p3450-porg/Kconfig"
+source "board/miovision/royaloak-ctm/Kconfig"
 
 endif
