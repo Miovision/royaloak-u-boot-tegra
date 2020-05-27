@@ -39,6 +39,11 @@ config TARGET_P3450_PORG
 	  card slot, HDMI, USB micro-B port, USB3.1 hub/host ports, PCIe/NVMe,
 	  and two GPIO expansion headers.
 
+config TARGET_ROYALOAK_CTM
+	bool "Miovision Tegra210 RoyalOak-CTM (Jetson Nano)"
+	help
+	  Miovision RoyalOak-CTM carrier board.
+
 endchoice
 
 config SYS_SOC
@@ -52,5 +57,6 @@ source "board/nvidia/p2371-0000/Kconfig"
 source "board/nvidia/p2371-2180/Kconfig"
 source "board/nvidia/p2571/Kconfig"
 source "board/nvidia/p3450-porg/Kconfig"
+source "board/miovision/royaloak-ctm/Kconfig"
 
 endif
