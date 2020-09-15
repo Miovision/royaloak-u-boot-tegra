@@ -55,7 +55,7 @@ source "board/nvidia/e2220-1170/Kconfig"
 source "board/nvidia/p2371-0000/Kconfig"
 source "board/nvidia/p2371-2180/Kconfig"
 source "board/nvidia/p2571/Kconfig"
-source "board/nvidia/p3450-porg/Kconfig"
+source "board/nvidia/p3450-0000/Kconfig"
 source "board/miovision/royaloak-ctm/Kconfig"
 
 endif

@@ -4,7 +4,7 @@
 
 / {
 	model = "Royal Oak CTM";
-	compatible = "nvidia,p3450-porg", "nvidia,tegra210";
+	compatible = "nvidia,p3450-0000", "nvidia,tegra210";
 
 	chosen {
 		stdout-path = &uarta;
