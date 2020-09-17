@@ -17,7 +17,7 @@
 #define CONFIG_TEGRA_ENABLE_UARTA
 
 #ifdef CONFIG_P3450_EMMC
-#define CONFIG_TEGRA_BOARD_STRING	"NVIDIA P3450-0002"
+#define CONFIG_TEGRA_BOARD_STRING	"Royal Oak CTM"
 #define BOOT_TARGET_DEVICES(func) \
 	func(MMC, mmc, 0) \
 	func(PXE, pxe, na) \
@@ -57,4 +57,4 @@
 /* Crystal is 38.4MHz. clk_m runs at half that rate */
 #define COUNTER_FREQUENCY	19200000
 
-#endif /* _P3450_0000_H */
+#endif /* _CTM_ROYALOAK_H */

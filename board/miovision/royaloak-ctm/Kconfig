@@ -14,7 +14,7 @@ config SYS_VENDOR
 config SYS_CONFIG_NAME
 	default "royaloak-ctm"
 
-config NANO_EMMC
-	bool "Module has eMMC"
+config P3450_EMMC
+	bool "SKU 2 module with eMMC"
 
 endif

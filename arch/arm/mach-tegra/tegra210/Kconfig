@@ -43,6 +43,7 @@ config TARGET_P3450_0000
 
 config TARGET_ROYALOAK_CTM
 	bool "Miovision Tegra210 RoyalOak-CTM (Jetson Nano)"
+	select BOARD_LATE_INIT
 	help
 	  Miovision RoyalOak-CTM carrier board.
 
