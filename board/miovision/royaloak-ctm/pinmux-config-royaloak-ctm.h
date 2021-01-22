@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020, NVIDIA CORPORATION. All rights reserved.
+ * Copyright (c) 2021, NVIDIA CORPORATION. All rights reserved.
  *
  * SPDX-License-Identifier: GPL-2.0+
  */
@@ -32,7 +32,6 @@ static const struct tegra_gpio_config royaloak_ctm_gpio_inits[] = {
 	GPIO_INIT(E,    2,   IN),
 	GPIO_INIT(E,    3,   IN),
 	GPIO_INIT(E,    6,   OUT1),
-	GPIO_INIT(G,    0,   OUT1),
 	GPIO_INIT(H,    0,   OUT0),
 	GPIO_INIT(H,    2,   IN),
 	GPIO_INIT(H,    3,   OUT0),
@@ -122,8 +121,8 @@ static const struct pmux_pingrp_config royaloak_ctm_pingrps[] = {
 	PINCFG(PE7,                  PWM3,     UP,     NORMAL,   OUTPUT,  DISABLE, DEFAULT),
 	PINCFG(GEN3_I2C_SCL_PF0,     I2C3,     NORMAL, NORMAL,   INPUT,   DISABLE, NORMAL),
 	PINCFG(GEN3_I2C_SDA_PF1,     I2C3,     NORMAL, NORMAL,   INPUT,   DISABLE, NORMAL),
-	PINCFG(UART2_TX_PG0,         DEFAULT,  NORMAL, NORMAL,   OUTPUT,  DISABLE, DEFAULT),
-	PINCFG(UART2_RX_PG1,         UARTB,    DOWN,   TRISTATE, OUTPUT,  DISABLE, DEFAULT),
+	PINCFG(UART2_TX_PG0,         UARTB,    NORMAL, NORMAL,   OUTPUT,  DISABLE, DEFAULT),
+	PINCFG(UART2_RX_PG1,         UARTB,    DOWN,   NORMAL,   INPUT,   DISABLE, DEFAULT),
 	PINCFG(UART2_RTS_PG2,        RSVD2,    DOWN,   TRISTATE, OUTPUT,  DISABLE, DEFAULT),
 	PINCFG(UART2_CTS_PG3,        RSVD2,    DOWN,   TRISTATE, OUTPUT,  DISABLE, DEFAULT),
 	PINCFG(WIFI_EN_PH0,          DEFAULT,  NORMAL, NORMAL,   OUTPUT,  DISABLE, DEFAULT),
