@@ -183,7 +183,6 @@ dtb-$(CONFIG_TEGRA) += tegra20-harmony.dtb \
 	tegra210-p2571.dtb \
 	tegra210-p3450-0000.dtb \
 	tegra210-p3541-0000.dtb \
-	tegra210-royaloak-ctm.dtb \
 	tegra186-p3636-0001.dtb
 
 dtb-$(CONFIG_ARCH_MVEBU) +=			\
