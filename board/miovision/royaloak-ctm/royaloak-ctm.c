@@ -15,6 +15,8 @@
 #include <asm/arch/pinmux.h>
 #include "../../nvidia/p2571/max77620_init.h"
 
+#define MAX77620_REG_CNFGBBC			0x04
+
 void pin_mux_mmc(void)
 {
 	struct udevice *dev;
@@ -54,6 +56,21 @@ void pin_mux_mmc(void)
 		ret = dm_i2c_write(dev, MAX77620_CNFGGLBL1_REG, &val, 1);
 		if (ret)
 			printf("i2c_write 0 0x3c 0x00 failed: %d\n", ret);
+	}
+
+	/* Disable Battery Backup Charging */
+	ret = dm_i2c_read(dev, MAX77620_REG_CNFGBBC, &val, 1);
+	if (ret) {
+		printf("i2c_read 0 0x3c 0x04 failed: %d\n", ret);
+	} else {
+		val &= ~BIT(0); /* Battery Backup Enable/Disable */
+		ret = dm_i2c_write(dev, MAX77620_REG_CNFGBBC, &val, 1);
+		if (ret) {
+			printf("i2c_write 0 0x3c 0x04 failed: %d\n", ret);
+		}
+		else {
+			printf("\nBackup battery charging support disabled\n");
+		}
 	}
 }
 
