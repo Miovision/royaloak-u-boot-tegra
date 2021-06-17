@@ -1,0 +1,15 @@
+if TARGET_ROYALOAK_CTM
+
+config SYS_BOARD
+	default "royaloak-ctm"
+
+config SYS_VENDOR
+	default "miovision"
+
+config SYS_CONFIG_NAME
+	default "royaloak-ctm"
+
+config P3450_EMMC
+	bool "SKU 2 module with eMMC"
+
+endif
